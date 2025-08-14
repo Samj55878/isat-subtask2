@@ -1,0 +1,9 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+void demoConversion() {
+    int num = rand() % 100; // Random number between 0 and 99
+    cout << "\n[Demo] Random number: " << num << endl;
+    cout << "[Demo] Binary: " << decimalToBinary(num) << endl;
+}
