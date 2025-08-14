@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    srand(time(0)); // Seed for random number
+
+    int choice;
+    string input;
+    int number;
+
+    while (true) {
+        showMenu();
+        cout << "Enter your choice (1-6): ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                cout << "Enter decimal number: ";
+                cin >> number;
+                cout << "Binary: " << decimalToBinary(number) << endl;
+                break;
+            case 2:
+                cout << "Enter binary number: ";
+                cin >> input;
+                cout << "Decimal: " << binaryToDecimal(input) << endl;
+                break;
+            case 3:
+                cout << "Enter decimal number: ";
+                cin >> number;
+                cout << "Hexadecimal: " << decimalToHex(number) << endl;
+                break;
+            case 4:
+                cout << "Enter hexadecimal number: ";
+                cin >> input;
+                cout << "Decimal: " << hexToDecimal(input) << endl;
+                break;
+            case 5:
+                demoConversion();
+                break;
+            case 6:
+                cout << "Exiting program. Goodbye!" << endl;
+                return 0;
+            default:
+                cout << "Invalid choice. Try again." << endl;
+        }
+    }
+
+    return 0;
+}
