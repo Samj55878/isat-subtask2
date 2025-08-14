@@ -1,0 +1,12 @@
+#include <iostream>
+
+void showMenu() {
+    cout << "\n===== Number Conversion Menu =====" << endl;
+    cout << "1. Convert Decimal to Binary" << endl;
+    cout << "2. Convert Binary to Decimal" << endl;
+    cout << "3. Convert Decimal to Hexadecimal" << endl;
+    cout << "4. Convert Hexadecimal to Decimal" << endl;
+    cout << "5. Demo (Random Decimal to Binary)" << endl;
+    cout << "6. Exit" << endl;
+    cout << "==================================" << endl;
+}
