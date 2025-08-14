@@ -1,0 +1,18 @@
+#include <sstream>
+#include <iomanip>
+
+string decimalToHex(int decimal) {
+    stringstream ss;
+    ss << hex << uppercase << decimal;
+    return ss.str();
+}
+
+int hexToDecimal(string hexStr) {
+    int decimal = 0;
+    try {
+        decimal = stoi(hexStr, nullptr, 16);
+    } catch (...) {
+        cout << "Invalid hexadecimal input." << endl;
+    }
+    return decimal;
+}
